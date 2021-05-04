@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var sharedPreferences : SharedPreferences //SharedPreferences'in içinin null olmayacağının teminatını verdik
    // var a : String değişkenler bu şekilde bırakılamaz ya initialize edilir ya abstrack olarak kullanılır
-   var a : String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main) //bu bir fonksiyon bunun  içindeki değişkenler bu fonksiyonla beraber silinir ancak globalse o zaman başka
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         textView.text = "yas: ${ageFromPreferences}"
 
 
-        print("${a}") // hata alıyor mu ? kontrol ediyoruz program çökmedi 
+
 
     }
 
